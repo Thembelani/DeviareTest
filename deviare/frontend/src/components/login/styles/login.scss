@@ -1,0 +1,28 @@
+.main-container {
+    margin: 50px auto;
+}
+.form-container {
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 0;  
+    width:100%;
+    max-width:330px,
+
+}
+
+.form-group {
+    margin-top:10px;
+}
+
+.field {
+    margin: 5px;
+    @extend .form-group
+}
+
+.btn {
+    margin: 5px;
+}
+
+label {
+    margin: 5px 20px
+}

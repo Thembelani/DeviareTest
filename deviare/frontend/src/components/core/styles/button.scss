@@ -1,0 +1,27 @@
+.btn {
+	padding:10px 20px;
+	display:inline-block;
+	border-radius:3px;
+	background:#ccc;
+	font-size:16px;
+	color:#333;
+}
+
+
+
+.btn-small {
+	@extend .btn
+}
+
+.btn-mid {
+	padding: 15px 25px;
+	font-size: 18px;
+	@extend .btn;
+}
+
+
+.btn-large {
+	padding:20px 30px;
+	font-size:22px;
+	@extend .btn;
+}
