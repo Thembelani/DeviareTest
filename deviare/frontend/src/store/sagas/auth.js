@@ -55,7 +55,7 @@ function * manageLoginAttemptsSaga () {
         const isLocked = yield select(Redux.AuthSelectors.selectLocked());
         if (attempts >= 3 && !isLocked) {
             yield put(Redux.AuthActions.isLocked(true));
-            yield delay(10000);
+            yield delay(60000);
             yield put(Redux.AuthActions.isLocked(false));
             yield put(Redux.AuthActions.resetAttempts())
         }
