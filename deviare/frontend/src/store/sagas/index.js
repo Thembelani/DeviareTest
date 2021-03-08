@@ -4,8 +4,6 @@ import Redux from '../redux/exports';
 
 import { loginSaga, logoutSaga, manageLoginAttemptsSaga } from './auth';
 
-console.log(Redux)
-
 export default function * root () {
     yield all([
         takeLatest(Redux.AuthTypes.LOGIN_REQUEST, loginSaga),
