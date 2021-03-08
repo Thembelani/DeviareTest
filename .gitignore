@@ -4,6 +4,10 @@ node_modules
 #
 .DS_Store
 
+
+# Frontend Build
+deviare/frontend/static/
+
 ### Django ###
 *.log
 *.pot
