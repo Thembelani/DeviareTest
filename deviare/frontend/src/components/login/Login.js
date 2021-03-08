@@ -124,8 +124,6 @@ const mapStateToProps = state => {
     return {
         is_loading: state.auth.is_loading,
         locked: state.auth.locked,
-        attempts: state.auth.attempts,
-        attempt_ts: state.auth.ts,
         message: state.auth.message
     }
 }
