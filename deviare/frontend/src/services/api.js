@@ -12,7 +12,6 @@ const create = (baseURL = 'http://localhost:8000') => {
     });
 
     const postLogin = (email, password) => {
-        console.log(email, password)
         return api.post(`${LOGIN_URL}`, qs.stringify({email, password}))
     }
 
