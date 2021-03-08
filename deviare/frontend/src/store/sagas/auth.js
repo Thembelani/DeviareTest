@@ -14,7 +14,8 @@ export function * loginSaga(action) {
 
     const response = yield call(api.postLogin, username, password);
     if (response.ok) {
-        yield put(Redux.AuthActions.loginSuccess('123', '456', {name: 'Test', surname: 'User'}));
+        const { user, token, refresh_token } = response.data;
+        yield put(Redux.AuthActions.loginSuccess(token, refresh_token, user));
         yield put(push('/home'));
     } else {
         yield put(Redux.AuthActions.loginFailure(response.data, 'Login Failed'));
